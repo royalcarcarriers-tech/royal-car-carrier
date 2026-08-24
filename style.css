@@ -1063,3 +1063,54 @@ footer {
     grid-column: auto;
   }
 }
+
+
+.brand-logo {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 3px 10px rgba(0,0,0,.25));
+}
+
+.footer-logo {
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  display: block;
+}
+
+.quote-form select {
+  width: 100%;
+  border: 1px solid #d9dce0;
+  background: #fbfbfa;
+  border-radius: 12px;
+  padding: 14px 15px;
+  outline: 0;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.quote-form select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(201,163,92,.13);
+}
+
+.mini-note a {
+  color: var(--accent-dark);
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .brand-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer-logo {
+    width: 62px;
+    height: 62px;
+  }
+}

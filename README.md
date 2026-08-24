@@ -28,13 +28,13 @@ Professional one-page static website for Royal Car Carrier LLC.
 GitHub will provide a Pages URL such as:
 `https://YOUR-USERNAME.github.io/royal-car-carrier/`
 
-## Before final launch
+## Current business information
 
-Replace the placeholder contact information with:
-- Business phone
-- Final business email
-- USDOT number
-- MC number if applicable
-- Business mailing address if desired
+- Email: info@royalcarcarrier.com
+- Phone: (877) 881-3812
+- Carrier authority: USDOT / MC pending
+- The quote form opens a pre-filled email to info@royalcarcarrier.com
 
-The quote form is currently visual only. It can be connected to Formspree, EmailJS, Google Forms, or a CRM.
+## Important
+
+Do not publish MC or USDOT numbers belonging to another legal entity on the Royal Car Carrier website.

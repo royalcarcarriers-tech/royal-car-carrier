@@ -15,7 +15,7 @@
   <header class="site-header" id="top">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Royal Car Carrier home">
-        <div class="brand-mark">RCC</div>
+        <img class="brand-logo" src="assets/royal-car-carrier-logo.png" alt="Royal Car Carrier logo" />
         <div class="brand-text">
           <strong>ROYAL CAR CARRIER</strong>
           <span>Vehicle Transport</span>
@@ -218,7 +218,7 @@
             team focused on safety, communication and performance.
           </p>
         </div>
-        <a class="btn btn-light" href="mailto:dispatch@royalcarcarrier.com?subject=Driver%20Application">Driver Opportunities</a>
+        <a class="btn btn-light" href="mailto:info@royalcarcarrier.com?subject=Driver%20Application">Driver Opportunities</a>
       </div>
     </section>
 
@@ -228,13 +228,13 @@
           <span class="eyebrow dark">Request a Quote</span>
           <h2>Tell us what you need moved.</h2>
           <p>
-            Submit the basic shipment information below. You can connect this form later to
-            Formspree, Google Forms, your CRM, or your business email.
+            Send us the shipment details and our team will review the route, vehicle information,
+            and transport requirements.
           </p>
 
           <div class="mini-note">
             <strong>Need immediate dispatch help?</strong>
-            <span>Add your business phone number here when ready.</span>
+            <span>Call <a href="tel:+18778813812">(877) 881-3812</a></span>
           </div>
         </div>
 
@@ -271,6 +271,25 @@
             <input type="text" name="vehicle" placeholder="Year, Make, Model" required />
           </label>
 
+          <div class="form-row">
+            <label>
+              Vehicle Condition
+              <select name="condition" required>
+                <option value="">Select</option>
+                <option>Operable</option>
+                <option>Inoperable</option>
+              </select>
+            </label>
+            <label>
+              Transport Type
+              <select name="transportType" required>
+                <option value="">Select</option>
+                <option>Open Transport</option>
+                <option>Enclosed Transport</option>
+              </select>
+            </label>
+          </div>
+
           <label>
             Notes
             <textarea name="notes" rows="4" placeholder="Additional shipment details"></textarea>
@@ -292,11 +311,11 @@
         <div class="contact-items">
           <div>
             <small>EMAIL</small>
-            <a href="mailto:dispatch@royalcarcarrier.com">dispatch@royalcarcarrier.com</a>
+            <a href="mailto:info@royalcarcarrier.com">info@royalcarcarrier.com</a>
           </div>
           <div>
             <small>PHONE</small>
-            <span>Add business phone</span>
+            <a href="tel:+18778813812">(877) 881-3812</a>
           </div>
           <div>
             <small>OPERATIONS</small>
@@ -310,7 +329,7 @@
   <footer>
     <div class="container footer-grid">
       <div class="footer-brand">
-        <div class="brand-mark small">RCC</div>
+        <img class="footer-logo" src="assets/royal-car-carrier-logo.png" alt="Royal Car Carrier logo" />
         <div>
           <strong>ROYAL CAR CARRIER LLC</strong>
           <p>Professional Vehicle Transportation</p>
@@ -326,7 +345,7 @@
 
       <div class="footer-legal">
         <p>© <span id="year"></span> Royal Car Carrier LLC. All rights reserved.</p>
-        <p class="legal-placeholder">USDOT / MC information can be added here once finalized.</p>
+        <p class="legal-placeholder">Carrier Authority: USDOT / MC Pending.</p>
       </div>
     </div>
   </footer>
