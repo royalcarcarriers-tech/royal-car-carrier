@@ -44,7 +44,80 @@ textarea {
   width: min(1180px, calc(100% - 40px));
   margin: 0 auto;
 }
+.top-bar {
+  background: #071a31;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 13px;
+}
 
+.top-bar-inner {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.top-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-contact a {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #e9edf3;
+  text-decoration: none;
+}
+
+.top-contact a:hover {
+  color: #f4bb3a;
+}
+
+.top-icon {
+  color: #f4bb3a;
+  font-size: 16px;
+}
+
+.top-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.top-authority {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #cbd4e1;
+}
+
+.top-authority strong {
+  color: #f4bb3a;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .top-bar-inner {
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .top-authority {
+    display: none;
+  }
+
+  .top-contact {
+    gap: 12px;
+  }
+
+  .top-divider {
+    display: none;
+  }
+}
 .site-header {
   position: fixed;
   inset: 0 0 auto 0;
