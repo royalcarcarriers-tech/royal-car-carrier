@@ -18,26 +18,32 @@ document.getElementById("year").textContent = new Date().getFullYear();
 const quoteForm = document.getElementById("quoteForm");
 const formMessage = document.getElementById("formMessage");
 
-quoteForm.addEventListener("submit", (event) => {
+quoteForm.addEventListener("submit", async (event) => {
   event.preventDefault();
 
-  const data = new FormData(quoteForm);
-  const subject = `Royal Car Carrier Quote Request - ${data.get("vehicle")}`;
-  const body = [
-    `Name: ${data.get("name")}`,
-    `Phone: ${data.get("phone")}`,
-    `Email: ${data.get("email")}`,
-    ``,
-    `Pickup: ${data.get("pickup")}`,
-    `Delivery: ${data.get("delivery")}`,
-    `Vehicle: ${data.get("vehicle")}`,
-    `Condition: ${data.get("condition")}`,
-    `Transport Type: ${data.get("transportType")}`,
-    ``,
-    `Notes: ${data.get("notes") || "None"}`
-  ].join("\n");
+  formMessage.textContent = "Sending your quote request...";
 
-  formMessage.textContent = "Opening your email app with the quote details...";
-  window.location.href =
-    `mailto:info@royalcarcarrier.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const formData = new FormData(quoteForm);
+
+  try {
+    const response = await fetch(quoteForm.action, {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json"
+      }
+    });
+
+    if (response.ok) {
+      formMessage.textContent =
+        "Thank you! Your quote request has been submitted successfully.";
+      quoteForm.reset();
+    } else {
+      formMessage.textContent =
+        "Something went wrong. Please try again or call us.";
+    }
+  } catch (error) {
+    formMessage.textContent =
+      "Something went wrong. Please try again or call us.";
+  }
 });
