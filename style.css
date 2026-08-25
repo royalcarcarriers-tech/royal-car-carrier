@@ -1156,10 +1156,11 @@ footer {
 }
 
 .footer-logo {
-  width: 74px;
-  height: 74px;
-  object-fit: contain;
-  display: block;
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
 }
 
 .quote-form select {
@@ -1192,8 +1193,8 @@ footer {
   }
 
   .footer-logo {
-    width: 62px;
-    height: 62px;
-  }
+    width: 90px;
+    height: 90px;
+}
 }
 }
