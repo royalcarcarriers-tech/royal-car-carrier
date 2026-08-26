@@ -5,33 +5,177 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy | Royal Car Carrier</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .legal-page-header {
+      background: #fff;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .legal-page-nav {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .legal-page-logo img {
+      width: 170px;
+      height: auto;
+      display: block;
+    }
+
+    .legal-page-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      flex-wrap: wrap;
+    }
+
+    .legal-page-links a {
+      text-decoration: none;
+      color: #111827;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .legal-page-call {
+      text-decoration: none;
+      font-weight: 700;
+      color: #111827;
+      white-space: nowrap;
+    }
+
+    .legal-page-main {
+      background: #f7f5f0;
+      min-height: 70vh;
+      padding: 70px 20px;
+    }
+
+    .legal-page-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 48px;
+      border-radius: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .legal-page-heading {
+      margin-bottom: 38px;
+    }
+
+    .legal-page-tag {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #8a6a2f;
+      margin-bottom: 10px;
+    }
+
+    .legal-page-heading h1 {
+      margin: 0 0 12px;
+      font-size: 42px;
+      line-height: 1.1;
+      color: #111827;
+    }
+
+    .legal-page-heading p {
+      margin: 0;
+      color: #6b7280;
+      font-size: 15px;
+    }
+
+    .legal-page-content {
+      color: #252525;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    .legal-page-content p {
+      margin: 0 0 18px;
+    }
+
+    .legal-page-content strong {
+      color: #111827;
+    }
+
+    .legal-page-content a {
+      color: #8a6a2f;
+      font-weight: 600;
+    }
+
+    .legal-page-footer {
+      background: #111827;
+      color: #fff;
+      padding: 28px 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .legal-page-footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .legal-page-nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .legal-page-logo img {
+        width: 145px;
+      }
+
+      .legal-page-main {
+        padding: 35px 14px;
+      }
+
+      .legal-page-container {
+        padding: 28px 20px;
+        border-radius: 16px;
+      }
+
+      .legal-page-heading h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <header class="header">
-    <div class="container nav">
-      <a href="index.html" class="logo">
+  <header class="legal-page-header">
+    <div class="legal-page-nav">
+      <a href="index.html" class="legal-page-logo">
         <img src="assets/royal-car-carrier-logo-new.png" alt="Royal Car Carrier Logo">
       </a>
 
-      <nav class="menu">
+      <div class="legal-page-links">
         <a href="index.html">Home</a>
         <a href="terms.html">Terms & Conditions</a>
-      </nav>
+      </div>
 
-      <a href="tel:8778813812" class="call-btn">Call (877) 881-3812</a>
+      <a href="tel:8778813812" class="legal-page-call">
+        Call (877) 881-3812
+      </a>
     </div>
   </header>
 
-  <section class="section-white">
-    <div class="container" style="max-width: 900px;">
-      <div class="section-heading">
-        <p class="section-tag">LEGAL</p>
-        <h2>Privacy Policy</h2>
+  <main class="legal-page-main">
+    <div class="legal-page-container">
+
+      <div class="legal-page-heading">
+        <div class="legal-page-tag">LEGAL</div>
+        <h1>Privacy Policy</h1>
         <p>Effective Date: January 1, 2026</p>
       </div>
 
-      <div class="section-text">
+      <div class="legal-page-content">
 
         <p>Welcome! Here at Royal Car Carrier LLC we know that privacy is important to you and to us.</p>
 
@@ -176,25 +320,23 @@
         <p><strong>Contacting Us</strong></p>
 
         <p>Royal Car Carrier LLC</p>
-
         <p>10999 Reed Hartman Hwy, Suite 108I</p>
-
         <p>Cincinnati, OH 45242</p>
-
         <p>Website: https://royalcarcarrier.com/</p>
-
         <p>Email: info@royalcarcarrier.com</p>
-
         <p>Phone: (877) 881-3812</p>
 
       </div>
     </div>
-  </section>
+  </main>
 
-  <footer class="footer">
-    <div class="container footer-bottom">
-      <p>© 2026 Royal Car Carrier. All rights reserved.</p>
-    </div>
+  <footer class="legal-page-footer">
+    <p>© 2026 Royal Car Carrier LLC. All rights reserved.</p>
+    <p>
+      <a href="terms.html">Terms & Conditions</a>
+      &nbsp; | &nbsp;
+      <a href="index.html">Home</a>
+    </p>
   </footer>
 
 </body>
