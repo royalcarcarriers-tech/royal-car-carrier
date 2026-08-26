@@ -1198,3 +1198,29 @@ footer {
 }
 }
 }
+
+.sms-consent {
+  margin: 18px 0 20px;
+}
+
+.sms-consent label {
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 13px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #444;
+}
+
+.sms-consent input[type="checkbox"] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.sms-consent a {
+  text-transform: none;
+  font-weight: 600;
+  text-decoration: underline;
+}
